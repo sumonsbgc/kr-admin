@@ -1,0 +1,52 @@
+form {
+
+    @mixin common-form-property {
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid $lightgray;
+        padding: .5rem;
+        color: #111111;
+        transition: outline .6s;
+        &:focus{
+            border: 2px solid $lightgray;
+            outline: 0;
+        }
+        &::placeholder{
+            color: $lightgray;
+        }
+    }
+
+    .label{
+        font-size: 1.1rem;
+        font-weight: 500;
+        display: block;
+        margin-left: 3px;
+        margin-bottom: .5rem;
+        color: $deepgray;
+    }
+
+    .input-control {
+        min-height: 41px;
+        @include common-form-property();
+    }
+
+    .text-control{
+        @include common-form-property();
+        min-height: 130px;
+        resize: none;
+    }
+
+    .submit-control{
+        @include common-form-property();
+        background-color: $purple;
+        border-color: $purple;
+        border-bottom: 4px solid #6f41b4;
+        color: #fff;
+        cursor: pointer;
+        padding: .7rem;
+        font-size: 1.1rem;
+        width: 190px;
+        text-align: center;
+    }
+}

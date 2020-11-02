@@ -2,28 +2,33 @@
 @import './reset';
 @import './mixins';
 @import './color';
+@import './utilities';
+@import './grid';
+@import './components/auth';
 
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 
-
 body{
     background-color: #f1f1f1;
-    //transition: all .2s;
+    transition: all .2s;
     #page-wrapper{
         display: grid;
         grid-template-columns: minmax(60px, 300px) auto;
         grid-template-rows: 45px minmax(100vh, auto);
+        // background-color: #6061db;
         @import './sections/header';
         @import './sections/sidebar';
     }
 }
 
 .content{
-    padding: 1rem;
+    padding: 2rem;
+    color: #fff;
 }
 
-@import './sections/form';
-@import './sections/table';
+@import './components/card';
+@import './components/form';
+@import './components/table';

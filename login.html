@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login KR Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="login">
+        <div class="flex flex-center">
+            <div class="login-form">
+                <div class="brand-logo flex justify-center mb-2">
+                    <img src="assets/images/admin-logo.svg" alt="Brand Logo" class="logo-img">
+                </div>
+                <form action="login.html" class="card p-3">
+                    <div class="my-1">
+                        <label for="" class="label">Email<span class="text-red">*</span></label>
+                        <input class="input-control" type="text" name="email" placeholder="example@gmail.com" value="" id="email">
+                    </div>
+                    <div class="my-1">
+                        <label for="" class="label">Password<span class="text-red">*</span></label>
+                        <input class="input-control" type="password" name="password" placeholder="Password" value="" id="password">
+                    </div>
+                    <div class="mt-2 flex align-center justify-between">
+                        <label for="remember" class="label">
+                            <input type="checkbox" name="remember" id="remember"> Remember Me
+                        </label>
+                        <label for="" class="label">
+                            <a href="forgot.html" class="">Forgot Password</a>
+                        </label>
+                    </div>
+                    <div class="mt-1">
+                        <input class="submit-control" type="submit" name="login" value="Login" id="login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

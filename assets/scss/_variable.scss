@@ -10,8 +10,10 @@ $fa-font-path: "assets/fonts/webfonts";
 Fonts name variable
 =================================================
 */
-$heading-font: "Serif";
-$text-font: 'arial';
+// Typography
+$font-nunito: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
 
 /* 
 =================================================
@@ -19,15 +21,27 @@ Background Color name variable
 =================================================
 */
 
-$bg-deepred: "red";
-$bg-lightred: "lightred";
+// Body BgColor
+//=================================
 
-$bg-deepwhite: "#f1f1f1";
-$bg-lightwhite: "#f4f4f4";
+$white: #ffffff;
+$lightwhite: #fbfbfb;
+$body-bg: #f8fafc;
+$deepwhite: #f1f1f1;
+$lightwhite: #f4f4f4;
+$lightgray: #c8c9ca;
+$deepgray: #666666;
 
-$bg-deeppurple: "#f1f1f1";
-$bg-lighpurple: "#f4f4f4";
-
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
 
 /* 
 =================================================

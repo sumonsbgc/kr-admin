@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login KR Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="login">
+        <div class="flex flex-center">
+            <div class="login-form">
+                <div class="brand-logo flex justify-center mb-2">
+                    <img src="assets/images/admin-logo.svg" alt="Brand Logo" class="logo-img">
+                </div>
+                <form action="login.html" class="card p-3">
+                    <div class="my-1">
+                        <label for="first_name" class="label">Frist Name<span class="text-red">*</span></label>
+                        <input class="input-control" type="text" name="first_name" placeholder="First Name" value="" id="first_name">
+                    </div>
+                    <div class="my-1">
+                        <label for="last_name" class="label">Last Name<span class="text-red">*</span></label>
+                        <input class="input-control" type="text" name="last_name" placeholder="Last Name" value="" id="last_name">
+                    </div>
+
+                    <div class="my-1">
+                        <label for="email" class="label">Email<span class="text-red">*</span></label>
+                        <input class="input-control" type="text" name="email" placeholder="example@gmail.com" value="" id="email">
+                    </div>
+
+                    <div class="my-1">
+                        <label for="password" class="label">Password<span class="text-red">*</span></label>
+                        <input class="input-control" type="password" name="password" placeholder="Password" value="" id="password">
+                    </div>
+
+                    <div class="my-1">
+                        <label for="confirm-password" class="label">Confirm Password<span class="text-red">*</span></label>
+                        <input class="input-control" type="password" name="confirm-password" placeholder="Password" value="" id="confirm-password">
+                    </div>
+
+                    <div class="my-2 flex align-center justify-between">
+                        <input class="submit-control" type="submit" name="register" value="Register" id="register">
+                        <label for="" class="label">
+                            <a href="login.html" class="">Login</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

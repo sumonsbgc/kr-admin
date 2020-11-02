@@ -16,5 +16,4 @@ function style() {
         .pipe(sourcemaps.write("."))
         .pipe(dest('./'));
 }
-
-exports.style = style;
+exports.default = style;

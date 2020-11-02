@@ -1,30 +1,31 @@
-header{
-    /*background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
-    /*background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
-    /*background-image: linear-gradient(to top, #ff174f 0%, #ff285e 100%);*/
-    /*background-color: #ff0844;*/
-    /*background-color: #625EB1;*/
-    /*background-color: #3e5151;*/
-    /*background-image: linear-gradient(-225deg,  0%, #5753C9 48%, #6E7FF3 100%);*/
-    background-color: #2d2f3e;
-    grid-column-start: 1;
-    grid-column-end: -1;
+header {
+    // background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    // background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    // background-image: linear-gradient(to top, #ff174f 0%, #ff285e 100%);
+    // background-color: #ff0844;
+    // background-color: #3e5151;
+    // background-color: #625eb1;
+    background-image: linear-gradient(-225deg, #5753c9 48%, #6e7ff3 100%);
+    box-shadow: 0 1px 20px -5px rgba(43, 43, 56, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 111;
+    grid-column: 1/-1;
     color: #fff;
     display: flex;
-    border-bottom: 1px solid #232430;
-    
-    .brand-logo{
+    border-bottom: 1px solid #5854c1;
+    .brand-logo {
         width: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        img{
+        img {
             width: 30px;
             height: 30px;
         }
-        &:hover{
-            background-color: #141b21;
+        &:hover {
+            background-color: #5d5fd2;
         }
     }
     .front-link {
@@ -32,7 +33,7 @@ header{
         align-items: center;
         padding: 0px 25px 0px 7px;
         cursor: pointer;
-        i{
+        i {
             margin-right: 10px;
             font-size: 1.1rem;
         }
@@ -40,32 +41,32 @@ header{
             font-size: 0.9rem;
             color: #fff;
         }
-        &:hover{
-            background-color: #141b21;
+        &:hover {
+            background-color: #5d5fd2;
         }
     }
     .top-menu {
         display: flex;
         margin-left: auto;
         align-items: center;
-        li{
-            a{
+        li {
+            a {
                 color: #fff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 line-height: 45px;
                 padding: 0 15px;
-                img{
+                img {
                     height: 30px;
                     width: 30px;
-                    border-radius: 30px;                    
+                    border-radius: 30px;
+                    margin-left: 15px;
                 }
-                &:hover{
-                    background-color: #141b21;                    
+                &:hover {
+                    background-color: #5f61db;
                 }
             }
         }
     }
-
 }

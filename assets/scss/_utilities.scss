@@ -1,0 +1,55 @@
+/*
+===========================================================
+Margin Utilities Style start from Here
+===========================================================
+*/
+
+@for $i from 1 to 5 {
+    .m-#{$i} {
+        margin: #{$i}rem !important;
+    }
+
+    .mx-#{$i} {
+        margin-left: #{$i}rem !important;
+        margin-right: #{$i}rem !important;
+    }
+
+    .my-#{$i} {
+        margin-top: #{$i}rem !important;
+        margin-bottom: #{$i}rem !important;
+    }
+
+    @each $ind, $dir in (t: top, r: right, b: bottom, l: left) {
+        .m#{$ind}-#{$i} {
+            margin-#{$dir}: #{$i}rem !important;
+        }
+    }
+}
+
+/*
+===========================================================
+Padding Utilities Style start from Here
+===========================================================
+*/
+
+@for $i from 1 to 5 {
+    .p-#{$i} {
+        padding: #{$i}rem !important;
+    }
+
+    .px-#{$i} {
+        padding-left: #{$i}rem !important;
+        padding-right: #{$i}rem !important;
+    }
+
+    .py-#{$i} {
+        padding-top: #{$i}rem !important;
+        padding-bottom: #{$i}rem !important;
+    }
+
+    @each $ind, $dir in (t: top, r: right, b: bottom, l: left) {
+        .p#{$ind}-#{$i} {
+            padding-#{$dir}: #{$i}rem !important;
+        }
+    }
+}
