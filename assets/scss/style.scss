@@ -4,6 +4,7 @@
 @import './color';
 @import './utilities';
 @import './grid';
+@import './flex';
 @import './components/auth';
 
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
@@ -12,13 +13,17 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 
 body{
-    background-color: #f1f1f1;
+    background-color: $lightwhite;
     transition: all .2s;
     #page-wrapper{
         display: grid;
-        grid-template-columns: minmax(60px, 300px) auto;
+        grid-template-columns: minmax(230px, 300px) auto;
         grid-template-rows: 45px minmax(100vh, auto);
-        // background-color: #6061db;
+        @media only screen and ( max-width: 575px ) {
+            grid-template-columns: auto;
+            grid-template-rows: 45px minmax(100vh, auto);
+        }
+        background-color: $lightwhite;
         @import './sections/header';
         @import './sections/sidebar';
     }
@@ -26,9 +31,13 @@ body{
 
 .content{
     padding: 2rem;
+    @media only screen and ( max-width: 575px ) {
+        padding: 1rem 0.6rem;
+    }
     color: #fff;
 }
 
-@import './components/card';
-@import './components/form';
-@import './components/table';
+@import './components/card/card';
+@import './components/form/form';
+@import './components/form/advance_form';
+@import './components/table/table';

@@ -5,23 +5,48 @@ aside {
     // background-color: #ff0844;
     // background-color: #3e5151;
     // background-image: linear-gradient(-225deg, #5753c9 48%, #6e7ff3 100%);
-    background-color: #625eb1;
-    background-image: linear-gradient(to bottom, #5753c9 48%, #6e7ff3 100%);
-    box-shadow: 1px -1px 20px -5px rgba(43, 43, 56, 0.6);
+    background-color: #313a46;
+    // background-color: #625eb1;
+    // background-image: linear-gradient(to bottom, #5753c9 48%, #6e7ff3 100%);
+    // box-shadow: 1px -1px 20px -5px rgba(43, 43, 56, 0.6);
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 1.2rem 0px;
+    @media screen and (max-width: 575px) {
+        position: absolute;
+        top: 0;
+        left: -400px;
+        z-index: 11;
+        width: 0px;
+        min-height: 100vh;
+        padding: 5rem 0;
+        background-color: #313a46;
+    }
     .sidebar-menu {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 575px) {
+            position: fixed;
+            top: 0;
+            z-index: 11;
+            bottom: -20px;
+            width: 240px;
+            min-height: 100vh;
+            padding: 5rem 0rem;
+            background-color: #313a46;
+            overflow-y: scroll;
+        }
+
         li {
             a {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
                 color: #fff;
-                display: block;
                 height: 45px;
                 padding: 0px 25px;
-                line-height: 45px;
                 font-size: 1rem;
                 position: relative;
                 transition: all 0.6s ease;
@@ -40,16 +65,19 @@ aside {
                     width: 0px;
                     transition-property: height, width;
                     transition-duration: 0.4s;
-                    background-color: #ff0844;
+                    // background-color: #ff0844;
+                    background-color: #161515;
                     height: 0%;
                 }
 
                 &::before {
                     bottom: 50%;
+                    border-top-right-radius: 5px;
                 }
 
                 &::after {
                     top: 50%;
+                    border-bottom-right-radius: 5px;
                 }
 
                 &.active,
@@ -64,28 +92,21 @@ aside {
                 &.active,
                 &:hover {
                     padding-left: 25px;
-                    background-color: #5f61db;
-                    background-image: linear-gradient(270deg,#6665e0 15%,#5e5fd9 100%);
+                    background-color: rgba(123, 123, 130, 0.18);
                 }
             }
-        }
-    }
 
-    .collapse-menu {
-        padding-left: 30px;
-        position: sticky;
-        margin-top: auto;
-        bottom: 20px;
-        button {
-            border: none;
-            outline: none;
-            cursor: pointer;
-            background: #5f60db !important;
-            color: #fff;
-            border-radius: 4px;
-            i {
-                padding: 7px 15px;
-                font-size: 1.5rem;
+            .sub-menu {
+                display: none;
+                background-color: rgba(27, 25, 25, 0.64);
+                li {
+                    a {
+                        padding-left: 55px;
+                        &:hover {
+                            background-color: rgba(78, 78, 84, 0.16);
+                        }
+                    }
+                }
             }
         }
     }

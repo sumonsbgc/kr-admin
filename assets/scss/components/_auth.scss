@@ -7,4 +7,14 @@
 .login-form,
 .register-form{
     width: 600px;
+    
+    .brand-logo{
+        margin-top: -65px;
+        background: #000;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

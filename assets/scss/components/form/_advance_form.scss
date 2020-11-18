@@ -1,0 +1,129 @@
+@mixin title-box{
+    width: 100%;
+    border: 2px solid $lightgray;
+    background-color: #fcfcfc;
+    color: $lightblack;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    padding: 1rem;
+
+    &:focus{
+        outline-color: $lightgray;
+    }
+
+    &::placeholder{
+        color: $gray;
+    }
+}
+
+.lg-title{
+    @include title-box();
+    height: 60px;
+}
+
+.md-title{
+    @include title-box();
+    height: 50px;
+}
+
+.sm-title{
+    @include title-box();
+    height: 42px;
+}
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    /* Hide default HTML checkbox */
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:checked + .slider {
+            background-color: $green;
+        }
+
+        &:focus + .slider {
+            box-shadow: 0 0 1px $green;
+        }
+
+        &:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        &:before {
+            content: "";
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            left: 6px;
+            bottom: 2px;
+            background-color: #fff;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        /* Rounded sliders */
+        &.round {
+            border-radius: 5px;
+        }
+        &.round:before {
+            border-radius: 50%;
+        }
+    }
+}
+
+.checkbox-label{
+    color: $lightblack;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.checkbox-control{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    &:after{
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1.1rem;
+        color: $white;
+        display: none;
+    }
+    &:hover{
+        background-color: #a5a5a5;
+    }
+    &:checked{
+        background-color: $green;
+    }
+    &:checked:after{
+        display: inline-block;
+    }
+}
+

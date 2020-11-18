@@ -13,6 +13,10 @@
     <div id="page-wrapper">
 
         <header>
+            <div class="collapse-menu">
+                <button id="toggle-sidebar"> <i class="fas fa-bars"></i> </button>
+            </div>
+
             <div class="brand-logo">
                 <img src="assets/images/admin-logo.svg" alt="">
             </div>
@@ -23,42 +27,127 @@
             </div>
 
             <ul class="top-menu">
-                <li>
-                    <a href="" class="">
+                <li id="notification-count-box">
+                    <div class="header-option">
                         <i class="fas fa-bell"></i>
                         <span class="count">5</span>
-                    </a>
+                    </div>
+                    <div class="option-dropdown header-notification-box">
+                        <div class="notification-head">
+                            <strong>Notification</strong>
+                            <small>Clear All</small>
+                        </div>
+                        <div class="notification-body">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./mohammad.jpg" alt="">
+                                        <span>Hello World</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="notification-footer">
+                            <a href="">View All</a>
+                        </div>
+                    </div>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="" class="">
                         <i class="fas fa-comments"></i>
                         <span class="count">5</span>
                     </a>
-                </li>
-                <li>
-                    <a href="" class="">
-                        sumonsbgc
+                </li> -->
+                <li id="">
+                    <div class="header-option">
+                        <span class="user_name">sumonsbgc</span>
                         <img src="assets/images/mohammad.jpg" alt="">
-                    </a>
+                    </div>
+                    <div class="option-dropdown header-profile-box">
+                        <ul class="user-info">
+                            <li><a href="">My Profile</a></li>
+                            <li><a href="">Edit Profile</a></li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </header>
 
-        <aside class="left-sidebar">
+        <aside class="left-sidebar" id="left-sidebar">
             <ul class="sidebar-menu">
                 <li><a href="" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="" class=""><i class="fas fa-sticky-note"></i> Posts</a></li>
+                <li>
+                    <a href="javascript:void" class=""><i class="fas fa-sticky-note"></i> Posts</a>
+                    <ul class="sub-menu" id="sub-menu">
+                        <li><a href="">Posts</a></li>
+                        <li><a href="">Add New Post</a></li>
+                        <li><a href="">Add Category</a></li>
+                    </ul>
+                </li>
                 <li><a href="" class=""><i class="fas fa-book"></i> Pages</a></li>
-                <li><a href="" class=""><i class="fas fa-shopping-cart"></i> Products</a></li>
+                <li>
+                    <a href="javascript:void" class=""><i class="fas fa-shopping-cart"></i> Products</a>
+                    <ul class="sub-menu" id="sub-menu">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Add New Product</a></li>
+                    </ul>
+                </li>
                 <li><a href="" class=""><i class="fas fa-tachometer-alt"></i> Menu</a></li>
                 <li><a href="" class=""><i class="fas fa-tachometer-alt"></i> Options</a></li>
                 <li><a href="" class=""><i class="fas fa-user"></i> Users</a></li>
                 <li><a href="" class=""><i class="fas fa-cog"></i> Settings</a></li>
                 <li><a href="components.html" class=""><i class="fas fa-tools"></i> Components</a></li>
             </ul>
-            <div class="collapse-menu">
-                <button> <i class="fas fa-bars"></i> </button>
-            </div>
         </aside>
 
         <div class="content">
@@ -67,6 +156,8 @@
 
     </div>
 
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/scripts.js"></script>
     <!--<div style="display: none">Icons made by <a href="https://www.flaticon.com/authors/smartline"
             title="Smartline">Smartline</a> from <a href="https://www.flaticon.com/"
             title="Flaticon">www.flaticon.com</a></div>
@@ -76,7 +167,6 @@
     <div style="display: none">Icons made by <a href="https://www.flaticon.com/authors/smalllikeart"
             title="smalllikeart">smalllikeart</a>
         from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-
 
 </body>
 

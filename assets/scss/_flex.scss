@@ -1,0 +1,42 @@
+// Flex Based Column
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.i-flex{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.flex > * {
+    padding: $gap / 2;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+@each $ind, $dir in (center: center, between: space-between , start: flex-start, end: flex-end) {
+    .justify-#{$ind}{
+        justify-content: #{$dir};
+    }
+}
+
+@for $col from 1 to 13 {
+    .col-#{$col} {
+        width: calc(100% / 12 * #{$col});
+        flex-basis: calc(100% / 12 * #{$col});
+    }
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

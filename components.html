@@ -13,6 +13,10 @@
     <div id="page-wrapper">
 
         <header>
+            <div class="collapse-menu">
+                <button id="toggle-sidebar"> <i class="fas fa-bars"></i> </button>
+            </div>
+
             <div class="brand-logo">
                 <img src="assets/images/admin-logo.svg" alt="">
             </div>
@@ -24,114 +28,157 @@
 
             <ul class="top-menu">
                 <li>
-                    <a href="" class="">
+                    <div class="">
                         <i class="fas fa-bell"></i>
                         <span class="count">5</span>
-                    </a>
+                    </div>
+                    <div class="notification-dropdown">
+                        <div class="notification-header">
+                            <strong>Notification</strong>
+                            <span>Clear All</span>
+                        </div>
+                        <div class="notification-body">
+                            <ul>
+                                <li>                                    
+                                    <a href="">
+                                        <img src="" alt="">
+                                        
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notification-footer"></div>
+                    </div>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="" class="">
                         <i class="fas fa-comments"></i>
                         <span class="count">5</span>
                     </a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="" class="">
-                        sumonsbgc
+                    <div class="">
+                        <span class="user_name">sumonsbgc</span>
                         <img src="assets/images/mohammad.jpg" alt="">
-                    </a>
+                    </div>
+                    <div class="dropdown">
+
+                    </div>
                 </li>
             </ul>
         </header>
 
-        <aside class="left-sidebar">
+        <aside class="left-sidebar" id="left-sidebar">
             <ul class="sidebar-menu">
                 <li><a href="" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="" class=""><i class="fas fa-sticky-note"></i> Posts</a></li>
+                <li>
+                    <a href="javascript:void" class=""><i class="fas fa-sticky-note"></i> Posts</a>
+                    <ul class="sub-menu" id="sub-menu">
+                        <li><a href="">Posts</a></li>
+                        <li><a href="">Add New Post</a></li>
+                        <li><a href="">Add Category</a></li>
+                    </ul>
+                </li>
                 <li><a href="" class=""><i class="fas fa-book"></i> Pages</a></li>
-                <li><a href="" class=""><i class="fas fa-shopping-cart"></i> Products</a></li>
+                <li>
+                    <a href="javascript:void" class=""><i class="fas fa-shopping-cart"></i> Products</a>
+                    <ul class="sub-menu" id="sub-menu">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Add New Product</a></li>
+                    </ul>
+                </li>
                 <li><a href="" class=""><i class="fas fa-tachometer-alt"></i> Menu</a></li>
                 <li><a href="" class=""><i class="fas fa-tachometer-alt"></i> Options</a></li>
                 <li><a href="" class=""><i class="fas fa-user"></i> Users</a></li>
-                <li><a href="" class=""><i class="fas fa-tools"></i> Settings</a></li>
+                <li><a href="" class=""><i class="fas fa-cog"></i> Settings</a></li>
                 <li><a href="components.html" class=""><i class="fas fa-tools"></i> Components</a></li>
             </ul>
-            <div class="collapse-menu">
-                <button> <i class="fas fa-bars"></i> </button>
-            </div>
         </aside>
 
         <div class="content">
-            <h3>Card Example</h3>
-            <div class="grid col-3">
 
-                <div class="card">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate!
+            <div class="flex mb-1">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Card Example</h3>                            
+                        </div>
                     </div>
-                    <div class="card-footer">Footer</div>
                 </div>
-
-                <div class="card">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate!
-                    </div>
-                    <div class="card-footer">Footer</div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate!
-                    </div>
-                    <div class="card-footer">Footer</div>
-                </div>
-
             </div>
 
-            <div class="card mt-2">
-                <div class="card-body">
-                    <form action="" class="p-1">
-
-                        <div class="grid col-4 mb-2">
-                            <div class="grid">
-                                <label for="">First name</label>
-                                <input type="text" class="input-control" placeholder="First Name">
-                            </div>
-
-                            <div class="grid">
-                                <label for="">Last Name</label>
-                                <input type="text" class="input-control" placeholder="First Name">
-                            </div>
-
-                            <div class="grid">
-                                <label for="">Last Name</label>
-                                <input type="text" class="input-control" placeholder="First Name">
-                            </div>
-                            <div class="grid">
-                                <label for="">Last Name</label>
-                                <input type="text" class="input-control" placeholder="First Name">
-                            </div>
+            <div class="flex mb-1">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate!
                         </div>
+                        <div class="card-footer">Footer</div>
+                    </div>
+                </div>
 
-                        <div class="grid col-2">
-                            <div class="grid">
-                                <label for="content">Content</label>
-                                <textarea name="content" id="content" class="text-control" placeholder="Your content"></textarea>
-                            </div>
-                            <div class="grid">
-                                <label for="content">Content</label>
-                                <textarea name="content" id="content" class="text-control" placeholder="Your content"></textarea>
-                            </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate!
                         </div>
+                        <div class="card-footer">Footer</div>
+                    </div>
+                </div>
+            </div>
 
-                    </form>
+            <div class="flex">
+                <div class="col-12">
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <form action="">
+                                <!-- large title field -->
+                                <div class="my-1">
+                                    <input type="text" class="lg-title" value="" placeholder="Large Title">
+                                </div>
+                                <div class="my-1">
+                                    <input type="text" class="md-title" value="" placeholder="Medium Title">
+                                </div>
+                                <div class="my-1">
+                                    <input type="text" class="sm-title" value="" placeholder="Small Title">
+                                </div>
+
+                                <div class="my-1">
+                                    <select name="city" id="city select2-dropdown" class="select2-dropdown" multiple>
+                                        <option value="Barishal">Barishal</option>
+                                        <option value="Chattogram">Chattogram</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>                    
+                    
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <form action="">
+                                <!-- Switch -->
+                                <label class="switch">
+                                    <input type="checkbox"><span class="slider round"></span>
+                                </label> 
+                                <br>
+                                <label for="mango" class="checkbox-label my-1 i-flex align-center">
+                                    <input type="checkbox" class="checkbox-control mr-1" id="mango" value="1"> Mango
+                                </label>
+                            </form>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>
 
 
     </div>
-
+    
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
