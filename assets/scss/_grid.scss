@@ -2,11 +2,11 @@
 .grid {
     display: grid;
     gap: 1rem;
-}
 
-@for $col from 1 to 13 {
-    .col-#{$col} {
-        grid-template-columns: repeat($col, 1fr);
+    @for $col from 1 to 13 {
+        .col-#{$col} {
+            grid-template-columns: repeat($col, 1fr);
+        }
     }
 }
 

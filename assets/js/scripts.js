@@ -34,6 +34,6 @@
         $(this).find('.option-dropdown').slideToggle();
     });
 
-    $(".select2-dropdown").select2();
+    // $(".select2-dropdown").select2();
 
 }(jQuery));
